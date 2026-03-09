@@ -16,7 +16,7 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 0 4px;
+    margin: 0 12px;
 }
 
 #workspaces button,
@@ -57,10 +57,11 @@ window#waybar {
     color: #ffffff;
     background: transparent;
     padding: 0 6px;
+    margin-right: 0px;
 }
 
-#pulseaudio.muted {
-    color: #444444;
+#network {
+    margin-right: 12px;
 }
 
 #battery.warning {
