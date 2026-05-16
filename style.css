@@ -64,6 +64,17 @@ window#waybar {
     margin-right: 12px;
 }
 
+#custom-notifs {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 6px;
+}
+
+#custom-notifs.has-notifs {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 #battery.warning {
     color: #cccc44;
 }

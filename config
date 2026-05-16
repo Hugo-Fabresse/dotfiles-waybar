@@ -4,7 +4,7 @@
   "height": 24,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "battery", "network"],
+  "modules-right": ["custom/notifs", "pulseaudio", "battery", "network"],
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -38,6 +38,14 @@
   "clock": {
     "format": " {:%H:%M}",
     "on-click": "~/.local/bin/launch_calendar.sh",
+    "tooltip": false
+  },
+
+  "custom/notifs": {
+    "exec": "~/.local/bin/notif_waybar.sh",
+    "return-type": "json",
+    "interval": 3,
+    "on-click": "python3 ~/.local/bin/notif_panel.py",
     "tooltip": false
   },
 
